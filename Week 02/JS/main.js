@@ -15,5 +15,6 @@ function updateInnerHTML(selector, newValue) {
 }
 
 function strong(value) {
+    //combining strings to produce a new strinf is called concatenation
   return '<strong>' + value + '</strong>';
 }
