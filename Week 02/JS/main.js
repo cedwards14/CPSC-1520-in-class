@@ -8,13 +8,25 @@ and ending with an asterisk + slash */
 console.log('main.js is loaded');
 
 //The updateInnerHTML function has two parameters 
-// - selectror - is a string that identifies which DOM element to get or selector
+// - selector - is a string that identifies which DOM element to get or selector
 // -newValue is a string that will be the new value for the selectors .innerhtml
-function updateInnerHTML(selector, newValue) {
+function updateInnerHTML(newValue) {
   document.querySelector(selector).innerHTML = newValue;
 }
+
+
+
 
 function strong(value) {
     //combining strings to produce a new strinf is called concatenation
   return '<strong>' + value + '</strong>';
 }
+
+var tag = document.querySelector('span.note');
+
+function italic(value)
+{
+  return '<i>' + value + '<i>';
+}
+
+tag.innerHTML = italic(tag.innerHTML);
